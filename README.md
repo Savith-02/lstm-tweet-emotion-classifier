@@ -6,7 +6,7 @@ This project is about classifying the emotion of tweets using a LSTM model. The 
 
 The project is divided into several steps:
 
-1. **Data Preprocessing**: The tweets are cleaned and tokenized. Stop words are removed and some are reduced into more simpler terms.
+1. **Data Preprocessing**: The tweets are cleaned and tokenized. Stop tweets are removed and some reduced into more simpler terms.
 
 2. **Word Embeddings**: Word embeddings are generated using the GloVe (Global Vectors for Word Representation) model. These embeddings are used to convert the words in the tweets to vectors that can be used as input to the LSTM model. The GloVe model used is `glove.twitter.27B.50d`, which was trained on Twitter data and can be downloaded from the [Stanford NLP Group's website](https://nlp.stanford.edu/projects/glove/).
 
@@ -17,6 +17,7 @@ The project is divided into several steps:
 5. **Loss Visualization**: The training and test losses are plotted against the number of epochs to visualize the model's learning process.
 
 The code for the project is contained in `tweet-emotion-classifier.ipynb`.
+
 The code used for preprocesing the raw csv is in `data-cleaner.ipynb`.
 
 ## Dataset
@@ -30,9 +31,6 @@ A subset of the original dataset was used for training the model, specifically f
 - sadness: 3806
 - surprise: 1510
 - worry: 6272
-
-## Running the Project
-To run the project, open the Jupyter notebook and run all the cells:
 
 ```bash
 jupyter notebook tweet-emotion-classifier.ipynb
