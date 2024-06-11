@@ -16,9 +16,8 @@ The project is divided into several steps:
 
 5. **Loss Visualization**: The training and test losses are plotted against the number of epochs to visualize the model's learning process.
 
-The code for the project is contained in `tweet-emotion-classifier.ipynb`.
-
-The code used for preprocesing the raw csv is in `data-cleaner.ipynb`.
+- The code for the project is contained in `tweet-emotion-classifier.ipynb`.
+- The code used for preprocesing the raw csv is in `data-cleaner.ipynb`.
 
 ## Dataset
 
