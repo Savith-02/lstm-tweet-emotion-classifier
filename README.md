@@ -36,3 +36,11 @@ A subset of the original dataset was used for training the model, specifically f
 ## Note on Loss Calculation
 
 The training and evaluation functions have been updated to average loss over the total number of examples, not the number of batches. This change ensures consistent loss values across different batch sizes. As a result, the magnitude of loss values in new plots may differ from previous ones, but the general trend remains consistent.
+
+## Limitations
+
+The performance of the model may be affected by the nature of the tweets. Tweets are often very vague, lack context, and contain spelling errors. These factors can make it difficult for the model to accurately classify the emotions.
+
+In particular, the word embeddings used in this model may not be able to capture the meaning of misspelled words or words used in unconventional ways, which are common in tweets. This is a known limitation of word embeddings.
+
+Future work could explore techniques for handling these issues, such as using character-level embeddings, incorporating a spell-checking step in the preprocessing, or using models specifically designed for understanding the informal language used in social media.
