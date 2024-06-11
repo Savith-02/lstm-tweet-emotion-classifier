@@ -32,3 +32,7 @@ A subset of the original dataset was used for training the model, specifically f
 - sadness: 3806
 - surprise: 1510
 - worry: 6272
+- 
+## Note on Loss Calculation
+
+The training and evaluation functions have been updated to average loss over the total number of examples, not the number of batches. This change ensures consistent loss values across different batch sizes. As a result, the magnitude of loss values in new plots may differ from previous ones, but the general trend remains consistent.
